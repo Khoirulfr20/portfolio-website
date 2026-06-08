@@ -1,21 +1,20 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO -->
     <title>Khoirul Fajar Romadhon — Full Stack Developer</title>
-    <meta name="description" content="Full Stack Developer based in Indonesia. Experienced in building web applications with Laravel, React, Node.js, and MySQL. Open to work & freelance." />
+    <meta name="description" content="Full Stack Developer berbasis di Indonesia. Berpengalaman dalam membangun aplikasi web dengan Laravel, React, Node.js, dan MySQL. Terbuka untuk kerja & freelance." />
     <meta name="keywords" content="full stack developer, web developer, laravel, react, indonesia, khoirul fajar romadhon" />
     <meta name="author" content="Khoirul Fajar Romadhon" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Khoirul Fajar Romadhon — Full Stack Developer" />
-    <meta property="og:description" content="Full Stack Developer building impactful web apps from frontend to backend." />
+    <meta property="og:description" content="Full Stack Developer membangun aplikasi web yang berdampak dari frontend hingga backend." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://khoirulfajar.dev" />
-    <meta property="og:image" content="https://khoirulfajar.dev/og-image.jpg" />
 
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0a0a'/><text y='.9em' font-size='80' x='10'>☕</text></svg>" />
@@ -27,111 +26,117 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="id">🇮🇩 ID</button>
+      <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
+    </div>
+
     <!-- ══ TICKER ══ -->
     <div class="ticker" aria-hidden="true">
       <div class="ticker-inner">
-        <span>⚡ OPEN TO WORK</span>
-        <span>★ FULL STACK DEVELOPER</span>
-        <span>☕ TEA ADDICT</span>
-        <span>⚡ KHOIRUL FAJAR ROMADHON</span>
-        <span>★ OPEN TO COLLABORATION</span>
-        <span>☕ BUILD. SHIP. REPEAT.</span>
-        <span>⚡ OPEN TO WORK</span>
-        <span>★ FULL STACK DEVELOPER</span>
-        <span>☕ TEA ADDICT</span>
-        <span>⚡ KHOIRUL FAJAR ROMADHON</span>
-        <span>★ OPEN TO COLLABORATION</span>
-        <span>☕ BUILD. SHIP. REPEAT.</span>
+        <span class="ticker-item" data-key="ticker1">⚡ TERBUKA UNTUK KERJA</span>
+        <span class="ticker-item" data-key="ticker2">★ FULL STACK DEVELOPER</span>
+        <span class="ticker-item" data-key="ticker3">☕ PECINTA TEH</span>
+        <span class="ticker-item" data-key="ticker4">⚡ KHOIRUL FAJAR ROMADHON</span>
+        <span class="ticker-item" data-key="ticker5">★ TERBUKA KOLABORASI</span>
+        <span class="ticker-item" data-key="ticker6">☕ BANGUN. KIRIM. ULANGI.</span>
+        <span class="ticker-item" data-key="ticker1">⚡ TERBUKA UNTUK KERJA</span>
+        <span class="ticker-item" data-key="ticker2">★ FULL STACK DEVELOPER</span>
+        <span class="ticker-item" data-key="ticker3">☕ PECINTA TEH</span>
+        <span class="ticker-item" data-key="ticker4">⚡ KHOIRUL FAJAR ROMADHON</span>
+        <span class="ticker-item" data-key="ticker5">★ TERBUKA KOLABORASI</span>
+        <span class="ticker-item" data-key="ticker6">☕ BANGUN. KIRIM. ULANGI.</span>
       </div>
     </div>
 
     <!-- ══ HEADER ══ -->
     <header>
-      <div class="header-left">
-        <div class="header-label">Portfolio — 2025</div>
+      <div class="header-left load-animate" data-delay="0">
+        <div class="header-label" data-key="portfolioLabel">Portfolio — 2025</div>
         <div class="header-name">
           Khoirul<br />
           <span class="line-accent">Fajar</span>Romadhon
         </div>
         <div class="header-bottom">
-          <div class="header-tagline">
-            Full Stack Developer &amp; Tea Addict<br />
-            Building web applications from<br />
-            frontend to backend — one cup at a time.
+          <div class="header-tagline" data-key="headerTagline">
+            Full Stack Developer &amp; Pecinta Teh<br />
+            Membangun aplikasi web dari<br />
+            frontend hingga backend — satu cangkir setiap saat.
           </div>
         </div>
       </div>
 
-      <div class="header-right">
+      <div class="header-right load-animate" data-delay="1">
         <div class="avatar-wrapper">
           <div class="avatar-frame">
             <img src="img/IMG-20200528-WA0148-removebg-preview.png" alt="Khoirul Fajar Romadhon" />
           </div>
-          <div class="avatar-label">Hello!</div>
+          <div class="avatar-label" data-key="helloLabel">Halo!</div>
         </div>
         <div class="header-status">
-          <span class="status-dot"></span>OPEN TO WORK<br /><br />
+          <span class="status-dot"></span><span data-key="statusOpen">TERBUKA UNTUK KERJA</span><br /><br />
           📍 Indonesia<br />
-          💼 Full Stack Developer<br />
-          ☕ Powered by Tea
+          💼 <span data-key="statusRole">Full Stack Developer</span><br />
+          ☕ <span data-key="statusTea">Didukung oleh Teh</span>
         </div>
       </div>
     </header>
 
     <!-- ══ NAVIGATION ══ -->
     <nav id="mainNav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#certificates">Certificates</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" data-key="navAbout">Tentang</a>
+      <a href="#skills" data-key="navSkills">Keahlian</a>
+      <a href="#experience" data-key="navExp">Pengalaman</a>
+      <a href="#projects" data-key="navProjects">Proyek</a>
+      <a href="#certificates" data-key="navCerts">Sertifikat</a>
+      <a href="#contact" data-key="navContact">Kontak</a>
     </nav>
 
-    <!-- ══════════════════════════════════
-       01 — ABOUT
-    ══════════════════════════════════ -->
+    <!-- ══ ABOUT SECTION ══ -->
     <section id="about">
       <div class="section-header">
         <div class="section-number">01</div>
-        <h2 class="section-title">About <em>Me</em></h2>
+        <h2 class="section-title"><span data-key="aboutTitle">Tentang</span> <em data-key="aboutTitleEm">Saya</em></h2>
       </div>
       <div class="about-content">
         <div class="about-text">
-          <p>
-            Hi! I'm <strong>Khoirul Fajar Romadhon</strong>, a passionate Full Stack Developer from Indonesia who loves turning ideas into functional, well-crafted web applications — from intuitive frontends to solid backend architectures.
+          <p data-key="aboutP1">
+            Halo! Saya <strong>Khoirul Fajar Romadhon</strong>, seorang Full Stack Developer yang penuh semangat dari Indonesia yang suka mengubah ide menjadi aplikasi web yang fungsional dan terstruktur dengan baik — dari frontend yang
+            intuitif hingga arsitektur backend yang kokoh.
           </p>
-          <p>I believe that <strong>great code</strong> is not just code that works, but code that is readable, maintainable, and built to scale. Every project is an opportunity to learn something new and grow as an engineer.</p>
-          <p>Outside of coding, I'm an avid <strong>Tea Addict</strong> — convinced that the right cup of tea can solve any bug. (Or at least make debugging a lot more enjoyable.)</p>
+          <p data-key="aboutP2">
+            Saya percaya bahwa <strong>kode yang hebat</strong> bukan hanya kode yang berfungsi, tetapi kode yang mudah dibaca, mudah dipelihara, dan dibangun untuk berkembang. Setiap proyek adalah kesempatan untuk mempelajari sesuatu yang
+            baru dan berkembang sebagai seorang insinyur.
+          </p>
+          <p data-key="aboutP3">Di luar coding, saya seorang <strong>Pecinta Teh</strong> yang yakin bahwa secangkir teh yang tepat dapat menyelesaikan bug apa pun. (Atau setidaknya membuat debugging menjadi lebih menyenangkan.)</p>
         </div>
         <div class="about-stats">
           <div class="stat-block reveal">
             <div class="stat-number">5+</div>
-            <div class="stat-label">Projects Completed</div>
+            <div class="stat-label" data-key="statProjects">Proyek Selesai</div>
           </div>
           <div class="stat-block reveal">
             <div class="stat-number">∞</div>
-            <div class="stat-label">Cups of Tea Consumed</div>
+            <div class="stat-label" data-key="statTea">Cangkir Teh Dikonsumsi</div>
           </div>
           <div class="stat-block reveal">
             <div class="stat-number">24/7</div>
-            <div class="stat-label">Learning Mode ON</div>
+            <div class="stat-label" data-key="statLearning">Mode Belajar MENYALA</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ══════════════════════════════════
-       02 — SKILLS
-    ══════════════════════════════════ -->
+    <!-- ══ SKILLS SECTION ══ -->
     <section id="skills">
       <div class="section-header">
         <div class="section-number">02</div>
-        <h2 class="section-title">My <em>Skills</em></h2>
+        <h2 class="section-title"><span data-key="skillsTitle">Keahlian</span> <em data-key="skillsTitleEm">Saya</em></h2>
       </div>
       <div class="skills-wrapper">
         <div class="skill-category">
-          <div class="skill-cat-label">Frontend</div>
+          <div class="skill-cat-label" data-key="skillFrontend">Frontend</div>
           <div class="skill-row">
             <div class="skill-badge reveal"><span class="sk-icon">🌐</span> HTML &amp; CSS</div>
             <div class="skill-badge reveal"><span class="sk-icon">⚡</span> JavaScript</div>
@@ -140,25 +145,22 @@
             <div class="skill-badge reveal"><span class="sk-icon">🎨</span> Bootstrap</div>
           </div>
         </div>
-
         <div class="skill-category">
-          <div class="skill-cat-label">Backend</div>
+          <div class="skill-cat-label" data-key="skillBackend">Backend</div>
           <div class="skill-row">
             <div class="skill-badge reveal"><span class="sk-icon">🐘</span> PHP</div>
             <div class="skill-badge reveal"><span class="sk-icon">🔴</span> Laravel</div>
             <div class="skill-badge reveal"><span class="sk-icon">🔌</span> REST API</div>
           </div>
         </div>
-
         <div class="skill-category">
-          <div class="skill-cat-label">Database</div>
+          <div class="skill-cat-label" data-key="skillDatabase">Database</div>
           <div class="skill-row">
             <div class="skill-badge reveal"><span class="sk-icon">🗄️</span> MySQL</div>
           </div>
         </div>
-
         <div class="skill-category">
-          <div class="skill-cat-label">Tools &amp; Mobile</div>
+          <div class="skill-cat-label" data-key="skillTools">Alat &amp; Mobile</div>
           <div class="skill-row">
             <div class="skill-badge reveal"><span class="sk-icon">🐙</span> Git &amp; GitHub</div>
             <div class="skill-badge reveal"><span class="sk-icon">💙</span> Flutter</div>
@@ -168,13 +170,11 @@
       </div>
     </section>
 
-    <!-- ══════════════════════════════════
-       03 — EXPERIENCE
-    ══════════════════════════════════ -->
+    <!-- ══ EXPERIENCE SECTION ══ -->
     <section id="experience">
       <div class="section-header">
         <div class="section-number">03</div>
-        <h2 class="section-title">My <em>Journey</em></h2>
+        <h2 class="section-title"><span data-key="expTitle">Perjalanan</span> <em data-key="expTitleEm">Saya</em></h2>
       </div>
       <div class="experience-list">
         <div class="exp-item reveal">
@@ -183,27 +183,24 @@
             <div class="exp-org">Universitas Muhammadiyah Tangerang</div>
           </div>
           <div class="exp-right">
-            <div class="exp-role">Informatics Student</div>
-            <div class="exp-desc">Studying computer science fundamentals, web development, and software engineering. Actively building portfolio projects and participating in campus tech communities.</div>
+            <div class="exp-role" data-key="expRole">Mahasiswa Informatika</div>
+            <div class="exp-desc" data-key="expDesc">Mempelajari dasar-dasar ilmu komputer, pengembangan web, dan rekayasa perangkat lunak. Aktif membangun proyek portfolio dan berpartisipasi dalam komunitas teknologi kampus.</div>
             <div>
-              <span class="exp-tag">Academic</span>
-              <span class="exp-tag">Web Dev</span>
+              <span class="exp-tag" data-key="expTag1">Akademik</span>
+              <span class="exp-tag" data-key="expTag2">Web Dev</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ══════════════════════════════════
-       04 — PROJECTS
-    ══════════════════════════════════ -->
+    <!-- ══ PROJECTS SECTION ══ -->
     <section id="projects">
       <div class="section-header">
         <div class="section-number">04</div>
-        <h2 class="section-title">My <em>Projects</em></h2>
+        <h2 class="section-title"><span data-key="projectsTitle">Proyek</span> <em data-key="projectsTitleEm">Saya</em></h2>
       </div>
       <div class="projects-grid">
-        <!-- PROJECT 1: Sistem Persuratan -->
         <div class="project-card reveal">
           <div class="project-thumb">
             <img src="projects/Screenshot 2026-05-24 184821.png" alt="Sistem Persuratan Laravel" />
@@ -216,31 +213,21 @@
                 </svg>
               </a>
               <a class="overlay-btn" href="https://www.youtube.com/watch?v=ByAdg4zPUTI&t=14s" target="_blank" rel="noopener" aria-label="Demo Video">
-                <svg viewBox="0 0 24 24">
-                  <path d="M10 15l5-3-5-3v6zm1-13C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
-                </svg>
+                <svg viewBox="0 0 24 24"><path d="M10 15l5-3-5-3v6zm1-13C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" /></svg>
               </a>
             </div>
           </div>
           <div class="project-body">
-            <span class="project-tag">Full Stack · Main Project</span>
+            <span class="project-tag" data-key="project1Tag">Full Stack · Proyek Utama</span>
             <div class="project-title">Sistem Persuratan Laravel</div>
-            <p class="project-summary">
-              Manual handling of mail often results in lost documents and slow approval processes. The digital Platform is here to provide a correspondence management space from start to finish as a way out of the problem. The system makes
-              it easy to share role-based access rights, set up approval workflows, and track mail position directly. The application of this technology has managed to streamline document organization while significantly cutting the
-              complexity of physical administration workflows.
+            <p class="project-summary" data-key="project1Desc">
+              Penanganan surat secara manual sering mengakibatkan dokumen hilang dan proses persetujuan yang lambat. Platform digital hadir untuk menyediakan ruang manajemen korespondensi dari awal hingga akhir sebagai jalan keluar dari
+              masalah tersebut. Sistem ini memudahkan berbagi hak akses berbasis peran, mengatur alur kerja persetujuan, dan melacak posisi surat secara langsung.
             </p>
-            <div class="project-stack">
-              <span class="stack-pill">Laravel</span>
-              <span class="stack-pill">PHP</span>
-              <span class="stack-pill">MySQL</span>
-              <span class="stack-pill">Blade</span>
-              <span class="stack-pill">Bootstrap</span>
-            </div>
+            <div class="project-stack"><span class="stack-pill">Laravel</span><span class="stack-pill">PHP</span><span class="stack-pill">MySQL</span><span class="stack-pill">Blade</span><span class="stack-pill">Bootstrap</span></div>
           </div>
         </div>
 
-        <!-- PROJECT 2: Chatbot EV Motor -->
         <div class="project-card reveal">
           <div class="project-thumb">
             <img src="projects/Screenshot 2026-05-19 112820.png" alt="Business Chatbot EV Motor" />
@@ -255,21 +242,16 @@
             </div>
           </div>
           <div class="project-body">
-            <span class="project-tag">AI + Chatbot</span>
+            <span class="project-tag" data-key="project2Tag">AI + Chatbot</span>
             <div class="project-title">Business Chatbot — EV Motor</div>
-            <p class="project-summary">
-              Many electric vehicle customers need instant information outside of official business hours. You can solve this problem by integrating an NLP-based chatbot on Google Sites to provide 24-hour automated help. The system
-              intelligently recognizes user intentions, provides dynamic menus, and automatically schedules meetings. The implementation of the technology managed to cut the workload of the manual assistance team significantly.
+            <p class="project-summary" data-key="project2Desc">
+              Banyak pelanggan kendaraan listrik membutuhkan informasi instan di luar jam kerja resmi. Integrasi chatbot berbasis NLP di Google Sites memberikan bantuan otomatis 24 jam. Sistem ini secara cerdas mengenali niat pengguna,
+              menyediakan menu dinamis, dan secara otomatis menjadwalkan pertemuan.
             </p>
-            <div class="project-stack">
-              <span class="stack-pill">HTML</span>
-              <span class="stack-pill">NLP</span>
-              <span class="stack-pill">Google Sites</span>
-            </div>
+            <div class="project-stack"><span class="stack-pill">HTML</span><span class="stack-pill">NLP</span><span class="stack-pill">Google Sites</span></div>
           </div>
         </div>
 
-        <!-- PROJECT 3: Finance Tracker -->
         <div class="project-card reveal">
           <div class="project-thumb">
             <img src="projects/Screenshot 2026-05-24 184732.png" alt="Finance Tracker Flutter" />
@@ -282,94 +264,74 @@
                 </svg>
               </a>
               <a class="overlay-btn" href="https://www.youtube.com/watch?v=i8Bh5jp5fAw&t=64s" target="_blank" rel="noopener" aria-label="Demo Video">
-                <svg viewBox="0 0 24 24">
-                  <path d="M10 15l5-3-5-3v6zm1-13C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
-                </svg>
+                <svg viewBox="0 0 24 24"><path d="M10 15l5-3-5-3v6zm1-13C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" /></svg>
               </a>
             </div>
           </div>
           <div class="project-body">
-            <span class="project-tag">Mobile · Flutter</span>
-            <div class="project-title">Finance Tracker — Budget &amp; Expense Manager</div>
-            <p class="project-summary">
-              Some individuals often experience difficulties in monitoring cross-platform spending due to the lack of adequate monitoring tools. Mobile phone software provides a way out through financial planning as well as actual data
-              scanning. Users can take advantage of post type grouping facilities, interactive diagrams, monthly funding restrictions, to cloud syncing. Utilizing the Firebase compute system ensures that all of these mechanisms deliver
-              seamless, unified cross-device performance.
+            <span class="project-tag" data-key="project3Tag">Mobile · Flutter</span>
+            <div class="project-title">Finance Tracker — Manajer Anggaran &amp; Pengeluaran</div>
+            <p class="project-summary" data-key="project3Desc">
+              Banyak individu sering mengalami kesulitan dalam memantau pengeluaran lintas platform karena kurangnya alat pemantauan yang memadai. Aplikasi mobile memberikan solusi melalui perencanaan keuangan serta pemindaian data aktual.
+              Pengguna dapat memanfaatkan fasilitas pengelompokan jenis posting, diagram interaktif, batasan pendanaan bulanan, hingga sinkronisasi cloud.
             </p>
-            <div class="project-stack">
-              <span class="stack-pill">Flutter</span>
-              <span class="stack-pill">Dart</span>
-              <span class="stack-pill">MySQL</span>
-              <span class="stack-pill">Charts</span>
-            </div>
+            <div class="project-stack"><span class="stack-pill">Flutter</span><span class="stack-pill">Dart</span><span class="stack-pill">MySQL</span><span class="stack-pill">Charts</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ══════════════════════════════════
-05 — CERTIFICATES
-══════════════════════════════════ -->
+    <!-- ══ CERTIFICATES SECTION ══ -->
     <section id="certificates">
       <div class="section-header">
         <div class="section-number">05</div>
-        <h2 class="section-title">Certifi<em>cates</em></h2>
+        <h2 class="section-title"><span data-key="certsTitle">Serti</span><em data-key="certsTitleEm">fikat</em></h2>
       </div>
-
       <div class="certs-grid">
         <div class="cert-card reveal">
           <img class="cert-image" src="projects/Dibimbing.jpg" alt="Fullstack Web Development" />
           <div class="cert-info">
-            <div class="cert-name">Fullstack Web Development</div>
+            <div class="cert-name" data-key="cert1Name">Fullstack Web Development</div>
             <div class="cert-issuer">Dicoding — 2026</div>
           </div>
         </div>
-
         <div class="cert-card reveal">
           <img class="cert-image" src="projects/Flutter.jpg" alt="Mobile Programming with Flutter" />
           <div class="cert-info">
-            <div class="cert-name">Mobile Programming with Flutter</div>
+            <div class="cert-name" data-key="cert2Name">Mobile Programming with Flutter</div>
             <div class="cert-issuer">UMT — 2024</div>
           </div>
         </div>
-
         <div class="cert-card reveal">
           <img class="cert-image" src="projects/Chatbot.jpg" alt="Chatbot for Business" />
           <div class="cert-info">
-            <div class="cert-name">Chatbot for Business</div>
+            <div class="cert-name" data-key="cert3Name">Chatbot for Business</div>
             <div class="cert-issuer">Disnaker Kota Tangerang — 2025</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ══════════════════════════════════
-       06 — CONTACT
-    ══════════════════════════════════ -->
+    <!-- ══ CONTACT SECTION ══ -->
     <section id="contact">
       <div class="section-header">
         <div class="section-number">06</div>
-        <h2 class="section-title">Get In <em>Touch</em></h2>
+        <h2 class="section-title"><span data-key="contactTitle">Hubungi</span> <em data-key="contactTitleEm">Saya</em></h2>
       </div>
       <div class="contact-content">
-        <!-- Ikon link di atas -->
         <div class="contact-links">
           <a class="contact-icon-link reveal" href="mailto:khoirulfajarromadhon@gmail.com" aria-label="Email">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
-            </svg>
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" /></svg>
           </a>
-
           <a class="contact-icon-link reveal" href="https://www.linkedin.com/in/khoirul-fajar-romadhon-081a8a274/" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 24 24">
               <path
                 d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
               />
             </svg>
           </a>
-
           <a class="contact-icon-link reveal" href="https://github.com/Khoirulfr20" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 24 24">
               <path
                 d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
               />
@@ -377,52 +339,51 @@
           </a>
         </div>
 
-        <!-- Form di bawah -->
         <div class="form-panel">
-          <div class="form-headline">
-            Let's Build<br />
-            Something <em>Great</em><br />
-            Together.
+          <div class="form-headline" data-key="formHeadline">
+            Mari Membangun<br />
+            Sesuatu yang <em>Hebat</em><br />
+            Bersama.
           </div>
 
           <form id="contactForm" class="simple-contact-form" novalidate>
             <div class="form-row">
               <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your full name" autocomplete="name" />
+                <label for="name" data-key="formName">Nama</label>
+                <input type="text" id="name" placeholder="Nama lengkap Anda" autocomplete="name" />
                 <small class="error-text"></small>
               </div>
               <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="your@email.com" autocomplete="email" />
+                <label for="email" data-key="formEmail">Email</label>
+                <input type="email" id="email" placeholder="email@anda.com" autocomplete="email" />
                 <small class="error-text"></small>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="purpose">Purpose</label>
+              <label for="purpose" data-key="formPurpose">Tujuan</label>
               <select id="purpose">
-                <option value="" disabled selected>Select a purpose...</option>
-                <option value="freelance">Freelance Project</option>
-                <option value="fulltime">Full-time Opportunity</option>
-                <option value="collaboration">Collaboration</option>
-                <option value="consultation">Consultation</option>
-                <option value="other">Other</option>
+                <option value="" disabled selected data-key="formPurposePlaceholder">Pilih tujuan...</option>
+                <option value="freelance" data-key="formPurpose1">Proyek Freelance</option>
+                <option value="fulltime" data-key="formPurpose2">Kesempatan Full-time</option>
+                <option value="collaboration" data-key="formPurpose3">Kolaborasi</option>
+                <option value="consultation" data-key="formPurpose4">Konsultasi</option>
+                <option value="other" data-key="formPurpose5">Lainnya</option>
               </select>
               <small class="error-text"></small>
             </div>
 
             <div class="form-group">
-              <label for="information">Information</label>
-              <textarea id="information" rows="4" placeholder="Tell me about your project, timeline, budget, or anything relevant..."></textarea>
+              <label for="information" data-key="formInfo">Informasi</label>
+              <textarea id="information" rows="4" placeholder="Ceritakan tentang proyek Anda, tenggat waktu, anggaran, atau hal lain yang relevan..."></textarea>
               <small class="error-text"></small>
             </div>
 
-            <button type="submit" class="submit-btn">Send Message →</button>
+            <button type="submit" class="submit-btn" data-key="formSubmit">Kirim Pesan →</button>
             <div id="formStatus"></div>
           </form>
 
-          <div class="form-note">* I'll get back to you within 48 hours — let's create impact.</div>
+          <div class="form-note" data-key="formNote">* Saya akan membalas dalam waktu 48 jam — mari ciptakan dampak bersama.</div>
         </div>
       </div>
     </section>
@@ -431,13 +392,13 @@
     <footer>
       <div>
         <div class="footer-name">Khoirul Fajar.DEV</div>
-        <div class="footer-copy">© 2025 Khoirul Fajar Romadhon — All rights reserved</div>
+        <div class="footer-copy" data-key="footerCopy">© 2025 Khoirul Fajar Romadhon — Seluruh hak cipta dilindungi</div>
       </div>
     </footer>
 
     <!-- ══ WA FLOATING BUTTON ══ -->
     <div class="wa-float">
-      <span class="wa-float-label">Chat on WhatsApp</span>
+      <span class="wa-float-label" data-key="waLabel">Chat via WhatsApp</span>
       <a class="wa-float-btn" href="https://wa.me/62895331423154?text=Hi%20Khoirul%2C%20I%20found%20your%20portfolio!" target="_blank" rel="noopener" aria-label="Chat via WhatsApp">
         <svg viewBox="0 0 24 24" fill="white">
           <path
